@@ -41,7 +41,7 @@ jobs:
       - name: Publish NPM Package (JS)
         run: |
           ./gradlew assemble
-          cd build/packages/js
+          cd build/dist/js/productionLibrary
           npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
