@@ -49,7 +49,7 @@ Visando a segurança e estabilidade dos microsserviços, o processo de publicaç
 
 1. **Desenvolvimento (PR):** O desenvolvedor abre um Pull Request para a branch `main`.
 2. **Continuous Integration (CI):** O GitHub Actions (`pr-check.yml`) entra em ação executando `./gradlew check`. O PR é **bloqueado** se algum teste falhar nos motores JVM ou Node.
-3. **Merge & Tagging:** Após revisão, o PR é mergeado. O Tech Lead atualiza a versão no `build.gradle.kts` e gera uma Release Tag (ex: `v1.0.4`).
+3. **Merge & Tagging:** Após revisão, o PR é mergeado. O desenvolvedor atualiza a versão no `build.gradle.kts` e gera uma Release Tag (ex: `v1.0.4`).
 4. **Continuous Delivery (CD):** O workflow de publicação (`publish.yml`) intercepta a Tag, empacota e distribui os artefatos assinados:
     * ☕ Um arquivo `.jar` publicado no Maven Registry do GitHub.
     * 🟨 Um pacote `.tgz` com definições tipadas publicado no NPM Registry do GitHub.
