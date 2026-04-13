@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="cnpj-validator-lib-jvm">
+    <output-path>$PROJECT_DIR$/build/libs</output-path>
+    <root id="archive" name="cnpj-validator-lib-jvm.jar">
+      <element id="module-output" name="cnpj-validator-lib.jvmMain" />
+    </root>
+  </artifact>
+</component>
